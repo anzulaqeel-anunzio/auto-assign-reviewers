@@ -1,0 +1,25 @@
+# Developed for Anunzio International by Anzul Aqeel. Contact +971545822608 or +971585515742. Linkedin Profile: linkedin.com/in/anzulaqeel
+
+name: 'Auto Assign Reviewers'
+description: 'Automatically assigns reviewers to PRs.'
+author: 'Anzul Aqeel'
+inputs:
+  token:
+    description: 'GitHub Token'
+    required: true
+    default: '${{ github.token }}'
+  reviewers:
+    description: 'Comma separated list of reviewers'
+    required: true
+  count:
+    description: 'Number of reviewers to assign'
+    required: false
+    default: '1'
+runs:
+  using: 'node16'
+  main: 'index.js'
+branding:
+  icon: 'users'
+  color: 'purple'
+
+# Developed for Anunzio International by Anzul Aqeel. Contact +971545822608 or +971585515742. Linkedin Profile: linkedin.com/in/anzulaqeel
